@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home | Your Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('background.jpg');
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-blend-mode: darken;
+            background-image: 0.15;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            background-color: #f8f8f8;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        .hero {
+            background-image: url('work1.jpg'); /* Add your own hero image */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 48px;
+            margin: 0 0 20px;
+        }
+        .hero p {
+            font-size: 24px;
+        }
+        .content {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .content h2 {
+            margin-bottom: 40px;
+        }
+        .transactions {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .transaction-box {
+            width: 300px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            margin: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .transaction-box img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            margin-bottom: 20px;
+        }
+        .transaction-box h3 {
+            margin-bottom: 10px;
+        }
+        .section-title {
+            margin-bottom: 30px;
+            font-size: 32px;
+            color: #333;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .feature-box {
+            width: 300px;
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+            background-color: #e9e9e9;
+            border-radius: 10px;
+        }
+        .feature-box img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
+        }
+        .testimonial-section {
+            background-color: #f9f9f9;
+            padding: 50px;
+            text-align: center;
+        }
+        .testimonial {
+            font-style: italic;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .sign-in-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+        .sign-in-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to "LITTLE PAY AGENCY"</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">Transactions</a></li>
+            <li><a href="about.html" target="_blank">About Us</a></li>
+            <li><a href="contact.html" target="_blank">Contact</a></li>
+        </ul>
+        <a href="signin.html" class="sign-in-btn" target="_blank">Sign In</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Manage Your Transactions with Ease</h2>
+        <p>Fast, Secure, and Reliable Transactions at Your Fingertips.</p>
+    </section>
+
+    <!-- Content Section -->
+    <section class="content">
+        <h2 class="section-title">Our Transaction Services</h2>
+
+        <!-- Transactions Section -->
+        <div class="transactions">
+            <div class="transaction-box">
+                <img src="fastdeposit.jpg".jpg" alt="Transaction Icon 1"> <!-- Add your transaction-related image -->
+                <h3>Quick Deposits</h3>
+                <p>Instant deposits with minimal fees. Get your money where it needs to be in seconds.</p>
+            </div>
+            <div class="transaction-box">
+                <img src="securewithdrawal.jpg" alt="Transaction Icon 2"> <!-- Add your transaction-related image -->
+                <h3>Secure Withdrawals</h3>
+                <p>Fast and secure withdrawal services that ensure your money is always safe.</p>
+            </div>
+            <div class="transaction-box">
+                <img src="transactionhistory.jpg" alt="Transaction Icon 3"> <!-- Add your transaction-related image -->
+                <h3>Transaction History</h3>
+                <p>Easily view and manage your transaction history with complete transparency.</p>
+            </div>
+        </div>
+
+        <!-- Additional Features Section -->
+        <h2 class="section-title">Why Choose Us?</h2>
+        <div class="features">
+            <div class="feature-box">
+                <img src="fintech.png" alt="Secure Icon"> <!-- Add a security-related image -->
+                <h3>Unmatched Security</h3>
+                <p>Our top-notch security ensures your transactions are protected at all times.</p>
+            </div>
+            <div class="feature-box">
+                <img src="money.png" alt="Support Icon"> <!-- Add a support-related image -->
+                <h3>24/7 Customer Support</h3>
+                <p>Our team is always available to assist you with any questions or concerns.</p>
+            </div>
+            <div class="feature-box">
+                <img src="community.png" alt="Easy to Use Icon"> <!-- Add a user-friendly image -->
+                <h3>User-Friendly Interface</h3>
+                <p>Our platform is designed for ease of use, making transactions simple for everyone.</p>
+            </div>
+        </div>
+
+        <!-- Testimonials Section -->
+        <div class="testimonial-section">
+            <h2 class="section-title">What Our Users Say</h2>
+            <div class="testimonial">
+                <p>"The best transaction platform I've used! Quick, secure, and hassle-free."</p>
+                <p>- John Doe</p>
+            </div>
+            <div class="testimonial">
+                <p>"Their support team is incredible, and the transaction history feature is a lifesaver."</p>
+                <p>- Sarah Smith</p>
+            </div>
+        </div>
+
+        <!-- Sign-In Button -->
+        <a href="signin.html" class="sign-in-btn">Sign In to Your Account</a>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Your Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

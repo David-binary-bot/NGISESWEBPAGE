@@ -1,0 +1,46 @@
+.container {
+    background-attachment: fixed;
+     background-color: 0.15;
+  }
+
+  .sign-in-form {
+    font-weight: 900;
+    color-interpolation-filters: sRGB;
+    color-scheme: red;
+    color: aqua;
+    text-align: center;
+  }
+
+  .see-sd {
+    color: red;
+    background-color: rgb(56, 19, 19);
+    font-weight: 900;
+    font-display: none;
+    font-style: unset;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  button {
+    background-color: greenyellow;
+    align-items: center;
+    
+  }
+
+  body {
+    background-image: url('IMAGES/work2.jpg');
+    height: 100%;
+  }
+
+  .primo {
+    position: centre;
+    margin-left: 650px;
+  }
+
+  h6 {
+    color: rgb(255, 43, 43);
+    text-align: center;
+    text-decoration: wavy;
+    font-weight: 600;
+  }
+
+
