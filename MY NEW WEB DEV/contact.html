@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: pink;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .contact-info, .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 40px;
+        }
+        .contact-info {
+            text-align: center;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        .contact-info a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #f0f0f0;
+        }
+        @media (min-width: 768px) {
+            .contact-info, .contact-form {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Contact Us</h2>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <div>
+                <h3>Our Address</h3>
+                <p>RONGAI, KAJIADO, KENYA</p>
+            </div>
+            <div>
+                <h3>Email</h3>
+                <p><a href="mailto:davikaranja368@gmail.com">davikaranja368@gmail.com</a></p>
+            </div>
+            <div>
+                <h3>Phone</h3>
+                <p><a href="tel:+254796543073">+254796543073</a></p>
+            </div>
+            <div>
+                <h3>Follow Us</h3>
+                <p>
+                    <a href="https://www.facebook.com/David_karanja2516/" target="_blank">Facebook</a> | 
+                    <a href="https://www.youtube.com/@JUSTCALLMEJOKER" target="_blank">Youtube</a> | 
+                    <a href="https://www.instagram.com/pinkypayy2023/" target="_blank">Instagram</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <form action="/submit_form" method="POST">
+                <input type="text" name="name" placeholder="DAVID MWANGI" required>
+                <input type="email" name="email" placeholder="davikaranja@gmail.com" required>
+                <input type="tel" name="phone" placeholder="0796543073">
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Your Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
